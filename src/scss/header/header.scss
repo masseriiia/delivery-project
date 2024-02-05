@@ -1,0 +1,42 @@
+.header {
+    padding-top: 48px;
+    padding-bottom: 44px;
+
+    &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__nav {
+        display: flex;
+        gap: 50px;
+
+        &_item {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            font-family: $ff;
+            font-size: $fs-xs;
+            font-weight: $fw-medium;
+            line-height: normal;
+            color: $white;
+            text-decoration: none;
+
+            &:hover {
+                color: $yellow;
+            }
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 25px;
+    }
+    &__button {
+        padding: 10px;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+    }
+}
