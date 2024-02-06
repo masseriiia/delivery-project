@@ -1,0 +1,69 @@
+.hero {
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+    }
+    &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-shrink: 0;
+
+        &_description {
+            color: $white;
+        }
+
+        &_links {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &_number {
+            font-weight: 500;
+            font-size: 25px;
+            text-decoration: none;
+            color: $white;
+        }
+        &_mail {
+            font-weight: 500;
+            font-size: 18px;
+            text-decoration: underline;
+            color: $white;
+        }
+    }
+
+    &__dish {
+        display: flex;
+        flex-direction: column;
+
+        &_title {
+            color: $white;
+        }
+
+        &_weight {
+            color: $white;
+        }
+
+        &_price {
+            color: $white;
+        }
+
+        &_buy {
+            display: flex;
+        }
+    }
+
+    &__food {
+        position: relative;
+        overflow: hidden;
+
+        img {
+            width: 100%; /* Занимает 100% ширины контейнера */
+            height: auto; /* Сохраняет пропорции изображения */
+            position: absolute; /* Позиционирование абсолютное относительно родительского контейнера */
+            top: 0; /* Выровнять изображение сверху контейнера */
+            left: 0; 
+        }
+    }
+
+}
